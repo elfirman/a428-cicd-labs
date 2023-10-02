@@ -21,9 +21,7 @@ pipeline {
         }
         stage('Manual Approval') {
            steps {
-                input('Lanjutkan ke tahap Deploy?') {
-                submitter('dicoding')
-                }
+                input 'Lanjutkan ke tahap Deploy?'
             }
         }
 
